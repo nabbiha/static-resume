@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="public/style.css" />
+</head>
+<body>
+    <h1>Static Resume Builder By Nabiha Khan</h1>
+    <form id="resumeForm">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name: </label><br />
+            <input type="text" id="name" name="name" placeholder="Enter your name" required /><br />
+
+            <label for="email">Email: </label><br />
+            <input type="email" id="email" name="email" placeholder="username@example.com" required /><br />
+
+            <label for="profilePicture">Profile Picture: </label><br />
+            <input type="file" id="profilePicture" name="profilePicture" accept="image/*" placeholder="Upload your Picture" /><br />
+
+            <label for="phone">Phone: </label><br />
+            <input type="tel" id="phone" name="phone" placeholder="+92 3XX-XXXXXXX" required /><br />
+
+            <label for="linkedin">LinkedIn: </label><br />
+            <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/yourprofile" required /><br />
+        </fieldset>
+
+        <fieldset>
+            <legend>Qualifications</legend>
+            <label for="Education">Education: </label><br />
+            <textarea name="Education" id="Education" rows="4" required></textarea>
+        </fieldset>
+
+        <fieldset>
+          <legend>Skills</legend>
+          <button type="button" id="toggle-skills">Toggle Skills</button>
+          <div id="skills" style="display: none;">
+              <label for="Skills">Specify your Skills</label><br />
+              <textarea name="Skills" id="Skills" rows="4" required></textarea>
+          </div>
+      </fieldset>
+
+        <fieldset>
+            <legend>Skills</legend>
+            <label for="Skills">Specify your Skills</label><br />
+            <textarea name="Skills" id="Skills" rows="4" required></textarea>
+        </fieldset>
+
+        <button type="submit">Generate Resume Now!</button>
+    </form>
+
+    <script src="public/app.js"></script>
+</body>
+</html>
