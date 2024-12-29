@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume Builder</title>
-    <link rel="stylesheet" href="public/style.css" />
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; img-src 'self' data:;">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <h1>Static Resume Builder By Nabiha Khan</h1>
@@ -35,7 +36,7 @@
 
         <fieldset>
           <legend>Skills</legend>
-          <button type="button" id="toggle-skills">Toggle Skills</button>
+<button type="button" id="toggle-skills">Toggle Skills</button>
           <div id="skills" style="display: none;">
               <label for="Skills">Specify your Skills</label><br />
               <textarea name="Skills" id="Skills" rows="4" required></textarea>
@@ -51,6 +52,7 @@
         <button type="submit">Generate Resume Now!</button>
     </form>
 
-    <script src="public/app.js"></script>
+    <script src="app.js"></script>
+    <script src="toggleSkills.js"></script>
 </body>
 </html>
